@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Ocean Pearl</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#041329;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}#luxury-drawer{transition:transform 0.35s cubic-bezier(0.16,1,0.3,1),opacity 0.35s ease;}#luxury-drawer-backdrop{transition:opacity 0.35s ease;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#00414c", "surface-tint": "#4cd6fb", "inverse-primary": "#00677d", "on-error-container": "#ffdad6", "secondary-fixed": "#cde5ff", "inverse-surface": "#d6e3ff", "primary-fixed": "#b3ebff", "primary-fixed-dim": "#4cd6fb", "surface": "#041329", "surface-bright": "#2c3951", "secondary-container": "#0378b7", "on-background": "#d6e3ff", "on-tertiary": "#00363f", "error": "#ffb4ab", "outline": "#869398", "on-primary-container": "#00414f", "on-tertiary-fixed-variant": "#004e5b", "tertiary": "#58d6f1", "primary-container": "#00b4d8", "on-secondary-container": "#f5f8ff", "surface-variant": "#27354c", "primary": "#4cd6fb", "surface-container-high": "#1c2a41", "surface-container-highest": "#27354c", "tertiary-fixed-dim": "#58d6f1", "on-surface": "#d6e3ff", "background": "#041329", "surface-container": "#112036", "on-error": "#690005", "error-container": "#93000a", "on-tertiary-fixed": "#001f25", "surface-dim": "#041329", "on-secondary-fixed-variant": "#004b74", "on-secondary-fixed": "#001d32", "on-surface-variant": "#bcc9ce", "on-primary-fixed": "#001f27", "tertiary-container": "#25b4ce", "outline-variant": "#3d494d", "on-secondary": "#003352", "inverse-on-surface": "#233148", "surface-container-low": "#0d1c32", "on-primary": "#003642", "on-primary-fixed-variant": "#004e5f", "tertiary-fixed": "#a7edff", "secondary": "#94ccff", "surface-container-lowest": "#010e24", "secondary-fixed-dim": "#94ccff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-2xl": "4rem", "margin": "3rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem" }, "fontFamily": { "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "display-hero": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "600"}], "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}], "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "500"}], "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "title-md": ["18px", {"lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600"}], "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_4px_24px_rgba(1,14,36,0.65)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Open Menu" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-high/60 text-primary hover:bg-surface-bright/50 transition-colors" id="drawer-open-btn"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-space-xs"><img alt="Ocean Pearl Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIBDXwsLi3pqqM1onseQboGBm6XNu7SzTomibNvFg4lBKeSvflrTEdZPBossZaYnZ-Q1uuDjvc0L8mkjc96qalij4vbe41GceTFTuIFZL2_wVvbCZUJneXE74cOrA1LK12gTpImdHo5m6Ryuezp9PUCYVKyzhvFCNIS2sUNgTQQ7u2XWaqEYiRItT7utk67zGxFgE4a1dRyvQaFMe3y7K_sgg-nWcj4We5oDn5PhVL"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Ocean Pearl</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase leading-none mt-0.5">Home</span></div></div></div><div class="flex items-center gap-space-xs"><a class="h-9 px-space-md rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-1 shadow-[0_8px_20px_-4px_rgba(0,180,216,0.35)] hover:brightness-110 active:scale-95 transition-all" data-path="reserve-table" href="#"><span class="material-symbols-outlined text-[16px]">restaurant</span><span class="hidden xs:inline">Reserve</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity" id="luxury-drawer-backdrop"></div><aside class="fixed top-0 left-0 bottom-0 z-50 w-4/5 max-w-sm bg-surface-container-low/95 backdrop-blur-2xl -translate-x-full shadow-[0_0_40px_rgba(0,180,216,0.15)] flex flex-col pt-safe pb-safe" id="luxury-drawer"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="Ocean Pearl Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIBDXwsLi3pqqM1onseQboGBm6XNu7SzTomibNvFg4lBKeSvflrTEdZPBossZaYnZ-Q1uuDjvc0L8mkjc96qalij4vbe41GceTFTuIFZL2_wVvbCZUJneXE74cOrA1LK12gTpImdHo5m6Ryuezp9PUCYVKyzhvFCNIS2sUNgTQQ7u2XWaqEYiRItT7utk67zGxFgE4a1dRyvQaFMe3y7K_sgg-nWcj4We5oDn5PhVL"/><span class="font-headline-sm text-headline-sm text-primary">Ocean Pearl</span></div><button aria-label="Close Menu" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 transition-colors" id="drawer-close-btn"><span class="material-symbols-outlined text-[24px]">close</span></button></div><div class="px-gutter-mobile py-space-sm"><div class="p-space-md rounded-xl bg-surface-container/60 backdrop-blur-md"><span class="font-label-sm text-label-sm text-secondary uppercase block mb-1">Coastal Distinction</span><p class="font-headline-sm text-headline-sm text-on-surface">Caviar, Oysters &amp; Tide Cellar</p></div></div><nav class="flex-1 overflow-y-auto px-gutter-mobile py-space-sm space-y-1" data-active-classes="bg-surface-container-highest/60 text-primary font-bold shadow-[0_2px_12px_rgba(76,214,251,0.12)]"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-3 rounded-xl transition-all bg-surface-container-highest/60 text-primary font-bold shadow-[0_2px_12px_rgba(76,214,251,0.12)]" data-path="home" href="#"><span class="material-symbols-outlined text-primary text-[22px]">waves</span><span>Home Sanctuary</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-all font-title-md text-title-md" data-path="menu" href="#"><span class="material-symbols-outlined text-primary text-[22px]">restaurant_menu</span><span>Culinary Menu</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-all font-title-md text-title-md" data-path="deals" href="#"><span class="material-symbols-outlined text-primary text-[22px]">local_offer</span><span>Tasting Curations</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-all font-title-md text-title-md" data-path="about" href="#"><span class="material-symbols-outlined text-primary text-[22px]">sailing</span><span>The Heritage</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-all font-title-md text-title-md" data-path="reviews" href="#"><span class="material-symbols-outlined text-primary text-[22px]">hotel_class</span><span>Patron Accolades</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-all font-title-md text-title-md" data-path="contact" href="#"><span class="material-symbols-outlined text-primary text-[22px]">call</span><span>Concierge &amp; Inquiries</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40 transition-all font-title-md text-title-md" data-path="reserve-table" href="#"><span class="material-symbols-outlined text-secondary text-[22px]">event_seat</span><span>Private Table Booking</span></a></nav><div class="p-gutter-mobile space-y-space-sm"><a class="w-full h-12 rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_8px_24px_rgba(0,180,216,0.3)]" data-path="reserve-table" href="#"><span class="material-symbols-outlined text-[20px]">table_bar</span><span>Reserve Master Table</span></a><div class="flex justify-center gap-space-md pt-2"><span class="font-label-sm text-label-sm text-outline">Port of Saint-Malo • Grand Pier</span></div></div></aside><main class="flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden">
+<div class="relative w-full h-[520px] xs:h-[560px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A grand maritime feast in an ambient coastal luxury restaurant. King lobster, steaming split claws, oysters on crushed ice, grilled jumbo tiger prawns, paired with crisp chilled white wine in crystal stemware, overlooking panoramic twilight ocean waters with gentle candlelight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUFutfK88QD6lW6xBRwmhb9-sQ89PT_CRnbayzumAvz9m7JJBsv7BGO_f6uRgqN-6Gz_loi4HocU3ulvLSOyosItbWFiwF-MPTZ18JbQMfLX66e1-Ee0L3a7bmA2AYlg_DkEpwAp3PPFZo2Yf8IHB_IdlHCGySWIuDupZxxX3EWA48r3hrZSFlSp-mQf-uHTlGHSqwkQpNpMIOTQnz4Aa0h90vz7it8E1Fx0vg7jkv')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-surface/30"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/80 via-transparent to-surface/40"></div>
+<!-- Hero Overlay Content -->
+<div class="relative h-full flex flex-col justify-end px-gutter-mobile pb-space-lg space-y-space-md">
+<div class="inline-flex items-center gap-1.5 self-start px-space-sm py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Fresh Catch Arrived Today</span>
+</div>
+<div class="space-y-space-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight tracking-tight">
+            Ocean Pearl Coastal Dining
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            Savor the freshest Pacific catch prepared with artisanal Mediterranean mastery and twilight tide views.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<a class="flex-1 h-12 rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-secondary-container font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 shadow-[0_8px_24px_rgba(0,180,216,0.35)] active:scale-95 transition-transform" data-path="reserve-table" href="#">
+<span class="material-symbols-outlined text-[18px]">table_restaurant</span>
+<span>Reserve Table</span>
+</a>
+<a class="px-space-md h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md text-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-1.5 hover:bg-surface-bright/70 active:scale-95 transition-all" data-path="menu" href="#">
+<span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+<span>Menu</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Excellence Counter Banner -->
+<section class="px-gutter-mobile -mt-3 relative z-10">
+<div class="grid grid-cols-2 gap-2 p-space-md rounded-xl bg-surface-container/90 backdrop-blur-xl shadow-[0_12px_32px_-8px_rgba(0,180,216,0.18)]">
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-high/40">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-primary leading-none">25+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Years Legacy</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-high/40">
+<div class="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-secondary leading-none">4.9/5</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Epicurean Score</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-high/40">
+<div class="w-9 h-9 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-tertiary leading-none">120k+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Honored Guests</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-high/40">
+<div class="w-9 h-9 rounded-full bg-primary-fixed-dim/10 flex items-center justify-center text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[20px]">award_star</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-headline-sm text-primary-fixed-dim leading-none">3x</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Michelin Guide</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Instant Reservation Bar Widget -->
+<section class="px-gutter-mobile mt-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">event_available</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Evening Dining Seatings</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Today, Sunset</span>
+</div>
+<!-- Fast Time Selector -->
+<div class="flex gap-2 overflow-x-auto pb-1" id="time-slot-selector">
+<button class="slot-pill px-3 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md shrink-0 active:scale-95 transition-all" type="button">
+          17:45 Sunset
+        </button>
+<button class="slot-pill px-3 py-2 rounded-lg bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface active:scale-95 transition-all" type="button">
+          18:30 Dusk
+        </button>
+<button class="slot-pill px-3 py-2 rounded-lg bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface active:scale-95 transition-all" type="button">
+          19:15 Prime
+        </button>
+<button class="slot-pill px-3 py-2 rounded-lg bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface active:scale-95 transition-all" type="button">
+          20:30 Moonlight
+        </button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">deck</span>
+<span>Patio &amp; Cellar tables open</span>
+</div>
+<a class="font-label-md text-label-md text-primary flex items-center gap-0.5 hover:underline" data-path="reserve-table" href="#">
+<span>Complete Booking</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Chef's Curated Masterpieces -->
+<section class="mt-space-xl px-gutter-mobile space-y-space-md">
+<div class="flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">Epicurean Selections</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Chef's Signature Catch</h2>
+</div>
+<a class="font-label-sm text-label-sm text-primary uppercase tracking-wider flex items-center gap-1 hover:underline" data-path="menu" href="#">
+<span>View Full Menu</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<!-- Dishes Vertical List / Stacked Showcase -->
+<div class="space-y-space-md">
+<!-- Dish Card 1: Lobster -->
+<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col space-y-space-sm">
+<div class="relative w-full h-44 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Char-grilled whole Pacific spiny lobster basted in wild garlic herb butter, golden browned edges, grilled lemon half, fresh dill sprigs, served on an artisan dark stoneware plate with rich copper ramekin of clarifed sea butter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy0vecsItaRvTLjhg08Z7QuhoOSYL7g32Xla58C8dKfA6D5y7QY7Mz65TYjmQHmnMFP1ZFz1b_KT7oB5w4ZegaYXkDkYYZ4fKZghgiN5U7OeY3OPzTnbS3YaQbR9NoTtEGi7T6tccCOL2WbMnCT-d6c5JOD86g0hjoH0ICXaIyVyoD_idON73NEx1bmRTMUGKkexiuGG_wn7FOEMUPoFKOw0pVdnunNkC3IElGtl5q"/>
+<div class="absolute top-2 left-2 px-2.5 py-1 rounded bg-secondary-container/90 backdrop-blur-md text-on-secondary-container font-label-sm text-label-sm tracking-wider uppercase">
+            Chef's Pick
+          </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-md text-label-md text-primary">
+            $88
+          </div>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Grilled Rock Lobster</h3>
+<span class="font-label-sm text-label-sm text-outline">Line-Caught</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Charred over cedarwood embers, brushed with roasted garlic chardonnay butter, smoked fleur de sel.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">wine_bar</span>
+            Chablis Grand Cru Pair
+          </span>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high text-primary hover:bg-surface-bright font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" onclick="this.innerText = 'Added to Tasting'" type="button">
+<span>Tasting Order</span>
+</button>
+</div>
+</article>
+<!-- Dish Card 2: Seafood Tower -->
+<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col space-y-space-sm">
+<div class="relative w-full h-44 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Two-tiered chilled grand plateau de mer seafood tower with Pacific oysters on crushed sea-ice, Alaskan king crab legs, poached wild tiger prawns, sea urchin uni, and mignonette sauce in crystal vessels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxnwcd078-hFIJQEQZKgQPzRNEmkPD7XkgEW8U3zYkz2yqXIcNGN9cTX2FQg9z4HpqJcLQ-XOz99ZYIdl7Q4g0Y5DOS2Ksn4ig9wZdwKAYrKwVubizIwk_7m9NhnmcYJXK25t4zc57TRXGBicXfDyGAwtcbPEIHdQ-2uSgCjrM4EgqugNQSOLx6vu-e4JJqtE6y33KUIFro08FQx6MgZbQW-wJNWEEeDUBafPEvNFI"/>
+<div class="absolute top-2 left-2 px-2.5 py-1 rounded bg-primary-container/90 backdrop-blur-md text-on-primary-container font-label-sm text-label-sm tracking-wider uppercase">
+            Best Seller
+          </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-md text-label-md text-primary">
+            $145
+          </div>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Royal Seafood Tower</h3>
+<span class="font-label-sm text-label-sm text-outline">Tiered Raw Bar</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Oysters de Bretagne, king crab legs, ruby bluefin crudo, and champagne mignonette on shaved ice.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">arrow_back_ios_new</span>
+            Includes Kaluga Caviar
+          </span>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high text-primary hover:bg-surface-bright font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" onclick="this.innerText = 'Added to Tasting'" type="button">
+<span>Tasting Order</span>
+</button>
+</div>
+</article>
+<!-- Dish Card 3: Chilean Sea Bass -->
+<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col space-y-space-sm">
+<div class="relative w-full h-44 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Pan-seared Chilean sea bass fillet with crisp golden skin, resting on delicate saffron veloute, tender braised baby leeks, and edible sea greens in an artistic ceramic bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApaaYV2Foxc4UWTTTmez8GnBp5VWxHhKd_XJjlPezChdDuaNt-4S21cEUHJNG-N_dmd98wmR6Xa_M0sKF6cblMRIi4k0E9GwqJFp7Zc7qCIGMaAapB9DydamX22_R2koPyENbwYm15y4DYcF7BP9DtA3YdFq19yrT9FXyHDFADLUrVVT6uYiiAlqptu-SQQHzilbriSeHZDfRA8zdzj00ZOuSbVIlgIxRQM9_1k5r0"/>
+<div class="absolute top-2 left-2 px-2.5 py-1 rounded bg-surface-container-high/90 backdrop-blur-md text-tertiary font-label-sm text-label-sm tracking-wider uppercase">
+            Wild Harvest
+          </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-md text-label-md text-primary">
+            $64
+          </div>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pan-Seared Sea Bass</h3>
+<span class="font-label-sm text-label-sm text-outline">Glacier Deep</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Golden-crisped fillet accompanied by saffron dashi broth, braised sea succulents, and candied shallots.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">restaurant</span>
+            Sustainable Traceable
+          </span>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high text-primary hover:bg-surface-bright font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" onclick="this.innerText = 'Added to Tasting'" type="button">
+<span>Tasting Order</span>
+</button>
+</div>
+</article>
+<!-- Dish Card 4: King Prawn Risotto -->
+<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col space-y-space-sm">
+<div class="relative w-full h-44 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Creamy squid ink carnaroli risotto crowned with chargrilled jumbo wild king prawns, lemon zest zest microgreens, and a swirl of shellfish bisque drizzle on a minimalist dark plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoCWLttejvTWX7jPTASdc5hNIlEUqoMlkjszVMTPSkQM8hpQFP6O5fHJB8GCHIg2PgIsmjZv3P99UbhyW_2O5wkVZT_wY0mrdhpV5j_sBqm2lrEjKKEdRnTgDmSY23XbOMytdMZTIb9YBTa8dLUX8oCC-KLBuX3bR_5mUfI8z-L7HB7RHSx5c-lGVDtW9f5lrApz7U4e-o9ABVkV71m2EKcaTTw3Q8z7V06_89w7hK"/>
+<div class="absolute top-2 left-2 px-2.5 py-1 rounded bg-secondary-container/90 backdrop-blur-md text-on-secondary-container font-label-sm text-label-sm tracking-wider uppercase">
+            Artisanal
+          </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-md text-label-md text-primary">
+            $56
+          </div>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Wild Prawn Risotto</h3>
+<span class="font-label-sm text-label-sm text-outline">Carnaroli Slow-Cook</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Jumbo wild tiger prawns, squid ink infused grain, preserved Meyer lemon zest, aged Parmigiano Reggiano.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+            Wood-Fired Prawns
+          </span>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high text-primary hover:bg-surface-bright font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" onclick="this.innerText = 'Added to Tasting'" type="button">
+<span>Tasting Order</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- The Ocean Pearl Pillars of Gastronomy -->
+<section class="mt-space-xl px-gutter-mobile space-y-space-md">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Our Coastal Standard</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">The Dining Experience</h2>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Pillar 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">anchor</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Daily Port Delivery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Directly from independent Breton &amp; Pacific fisherman, inspected by our executive head chef at 05:00 every dawn.
+          </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[26px]">outdoor_grill</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Cedar &amp; Char-Grill</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Infusing sweet maritime flesh with aromatic Mediterranean olive wood smoke, locking in pristine sea salinity.
+          </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[26px]">wine_bar</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Tide Cellar Pairings</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Over 420 mineral-forward vintages, grower Champagnes, and biodynamic coastal whites selected by Master Sommeliers.
+          </p>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[26px]">wb_twilight</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Harbor Sunset Terrace</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Uninterrupted horizon views overlooking the grand bay, illuminated by custom glass lanterns as the tide rolls in.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Guest Sommelier Pairing Callout -->
+<section class="mt-space-xl px-gutter-mobile">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-space-lg space-y-space-md">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Cellar Spotlight</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curated Oysters &amp; Champagne Flight</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Experience 6 rare coastal oysters matched with 3 glasses of premier cru French vintage, guided table-side.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<a class="h-11 px-space-lg rounded-xl bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-[0_4px_16px_rgba(76,214,251,0.25)] active:scale-95 transition-all" data-path="deals" href="#">
+<span class="material-symbols-outlined text-[18px]">local_offer</span>
+<span>Explore Tasting Packages</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Floating Sticky Action on Scroll (Mobile Convenience) -->
+<div class="sticky bottom-20 z-40 px-gutter-mobile py-2 pointer-events-none">
+<div class="pointer-events-auto flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
+<div class="flex items-center gap-2 pl-2">
+<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface leading-tight">Concierge Desk</span>
+<span class="font-label-sm text-label-sm text-secondary leading-tight">Open for Tonight</span>
+</div>
+</div>
+<a class="h-10 px-space-md rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-1 shadow-md active:scale-95 transition-all" data-path="reserve-table" href="#">
+<span>Instant Table</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  (function initHomeInteractions() {
+    const pills = document.querySelectorAll('#time-slot-selector .slot-pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => {
+          p.classList.remove('bg-primary-container', 'text-on-primary-container');
+          p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        pill.classList.add('bg-primary-container', 'text-on-primary-container');
+      });
+    });
+  })();
+</script><footer class="mt-space-2xl bg-surface-container-lowest/90 px-gutter-mobile pt-space-2xl pb-space-2xl space-y-space-xl"><div class="flex flex-col items-center text-center space-y-space-xs"><img alt="Ocean Pearl Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIBDXwsLi3pqqM1onseQboGBm6XNu7SzTomibNvFg4lBKeSvflrTEdZPBossZaYnZ-Q1uuDjvc0L8mkjc96qalij4vbe41GceTFTuIFZL2_wVvbCZUJneXE74cOrA1LK12gTpImdHo5m6Ryuezp9PUCYVKyzhvFCNIS2sUNgTQQ7u2XWaqEYiRItT7utk67zGxFgE4a1dRyvQaFMe3y7K_sgg-nWcj4We5oDn5PhVL"/><span class="font-headline-md text-headline-md text-on-surface tracking-wide mt-2">Ocean Pearl</span><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">Haute maritime gastronomy, sustainable deep-ocean harvests, and vintage coastal pairings overlooking the tide.</p></div><div class="p-space-lg rounded-xl bg-surface-container/50 backdrop-blur-md space-y-space-sm text-center"><span class="material-symbols-outlined text-primary text-[28px]">mail</span><h4 class="font-headline-sm text-headline-sm text-on-surface">The Captain's Gazette</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Receive private invitations to moonlit caviar releases and seasonal seafood arrivals.</p><div class="flex flex-col gap-2 pt-1"><input class="h-11 px-space-md rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm outline-none focus:ring-1 focus:ring-primary" placeholder="Your private email address" type="email"/><button class="h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_16px_rgba(76,214,251,0.25)] hover:brightness-110 active:scale-95 transition-all">Join Inner Circle</button></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg"><div class="space-y-space-xs"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px]">schedule</span><span class="font-label-lg text-label-lg uppercase tracking-wider">Hours of Grace</span></div><ul class="space-y-1 text-on-surface-variant font-body-sm text-body-sm"><li><span class="text-on-surface">Mon - Thu:</span> 17:30 — 23:00</li><li><span class="text-on-surface">Fri - Sat:</span> 12:00 — 15:30 • 17:30 — 00:30</li><li><span class="text-on-surface">Sunday Tide:</span> 11:30 — 22:00</li><li><span class="text-secondary font-label-sm text-label-sm">Raw Bar open until midnight</span></li></ul></div><div class="space-y-space-xs"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px]">pin_drop</span><span class="font-label-lg text-label-lg uppercase tracking-wider">The Pier Sanctuary</span></div><div class="text-on-surface-variant font-body-sm text-body-sm space-y-1"><p class="text-on-surface">48 Quai des Corsaires, Suite Marine</p><p>Harbor View Bay, CS 92040</p><p class="text-primary">+1 (800) 492-TIDE (8433)</p><p class="text-outline">concierge@oceanpearlgastronomy.com</p></div></div></div><div class="flex flex-col items-center gap-space-md pt-space-md"><div class="flex items-center gap-space-lg text-on-surface-variant"><a aria-label="Instagram" class="w-11 h-11 rounded-full bg-surface-container-high/50 flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Location Map" class="w-11 h-11 rounded-full bg-surface-container-high/50 flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">map</span></a><a aria-label="Phone Concierge" class="w-11 h-11 rounded-full bg-surface-container-high/50 flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="Share Experience" class="w-11 h-11 rounded-full bg-surface-container-high/50 flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a></div><p class="font-label-sm text-label-sm text-outline tracking-wider text-center">© 2025 OCEAN PEARL HAUTE GASTRONOMIE. ALL RIGHTS RESERVED.</p></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(1,14,36,0.85)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-1"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[50px] h-full transition-colors text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm scale-90">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[50px] h-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm scale-90">Menu</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[50px] h-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="deals" href="#"><span class="material-symbols-outlined text-[22px]">local_offer</span><span class="font-label-sm text-label-sm scale-90">Deals</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[50px] h-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[22px]">sailing</span><span class="font-label-sm text-label-sm scale-90">About</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[50px] h-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="reviews" href="#"><span class="material-symbols-outlined text-[22px]">hotel_class</span><span class="font-label-sm text-label-sm scale-90">Reviews</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[50px] h-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[22px]">call</span><span class="font-label-sm text-label-sm scale-90">Contact</span></a></div></nav><script>(function(){const openBtn=document.getElementById('drawer-open-btn');const closeBtn=document.getElementById('drawer-close-btn');const drawer=document.getElementById('luxury-drawer');const backdrop=document.getElementById('luxury-drawer-backdrop');function openDrawer(){drawer.classList.remove('-translate-x-full');backdrop.classList.remove('opacity-0','pointer-events-none');backdrop.classList.add('opacity-100');}function closeDrawer(){drawer.classList.add('-translate-x-full');backdrop.classList.remove('opacity-100');backdrop.classList.add('opacity-0','pointer-events-none');}if(openBtn)openBtn.addEventListener('click',openDrawer);if(closeBtn)closeBtn.addEventListener('click',closeDrawer);if(backdrop)backdrop.addEventListener('click',closeDrawer);})();</script></body></html>
